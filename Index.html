@@ -1,286 +1,238 @@
-<html>
-<head>
-<title>Sakthivel profile</title>
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DevBrains - Find Your Mentor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0A2540", // Deep Navy Blue
+            "background-light": "#F8F9FA",
+            "background-dark": "#101922",
+            "text-headline": "#212529",
+            "text-body": "#495057",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-7xl flex-1">
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 dark:border-b-gray-800 px-10 py-3">
+<div class="flex items-center gap-4 text-text-headline dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-text-headline dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">DEVBRAINS</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text-body dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-white transition-colors" href="#">Success Stories</a>
+<a class="text-text-body dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-white transition-colors" href="#">Our Mentors</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent border border-primary text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Join Devbrains Free</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col">
+<div class="@container bg-white dark:bg-background-dark py-20 px-10">
+<div class="grid grid-cols-1 @[864px]:grid-cols-10 gap-12 items-center">
+<div class="flex flex-col gap-8 @[864px]:col-span-6">
+<div class="flex flex-col gap-4 text-left">
+<h1 class="text-text-headline dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                      Find the Right Mentor to Propel Your Career Forward
+                    </h1>
+<h2 class="text-text-body dark:text-gray-300 text-base font-normal leading-normal @[480px]:text-lg">
+                      Connect with top-tier professionals and unlock your full potential.
+                    </h2>
+</div>
+<label class="flex flex-col min-w-40 h-14 w-full max-w-xl">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark">
+<div class="text-text-body dark:text-gray-400 flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-headline dark:text-white focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-text-body dark:placeholder:text-gray-400 px-2 text-base font-normal leading-normal" placeholder="Search 10,000+ Verified Experts" value=""/>
+<div class="flex items-center justify-center pr-2">
+<button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Browse Now</span>
+</button>
+</div>
+</div>
+</label>
+</div>
+<div class="w-full @[864px]:col-span-4 flex justify-center">
+<div class="relative w-full max-w-sm">
+<img class="w-full aspect-square object-cover rounded-xl shadow-lg" data-alt="Professional headshot of a smiling woman in business attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWkeWCu8D00p4uiYpSWOOY8Wfw4kMYUc7YNwkWbyAxr027BgTEeGzvpffc0oeHtpNMSWE5RCtxzugQ3dwGeLrFty_0Cj8VKKlbKA6AvbuPVzgkg3-OJSPdR0pk5tTnNXOkf5tHhN3fevDkPH-_kSDF0A9onKveGRroV21sLMIzL4Vmg53pn46DkqjsMI_4jREwNkBMivSQChICqRYmTMF7uRFl2lTd2KzFhtXnT3EDkq7aoo9ha_-EpPKnHUr1fAhyyQFvg3dcWagI"/>
+<div class="absolute -bottom-8 -right-8 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 w-72">
+<p class="text-text-body dark:text-gray-300 text-sm italic">"DEVBRAINS connected me with a mentor who transformed my approach to product strategy."</p>
+<p class="text-text-headline dark:text-white font-bold mt-2">Sarah Johnson</p>
+<p class="text-text-body dark:text-gray-400 text-xs">Product Manager, Innovate Inc.</p>
+<img class="h-5 mt-2 invert-if-dark" data-alt="Innovate Inc. company logo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcSmKrXlTDmBgLldAbGYYpqorwJAuouNRrecf5ajzx6l8RNmOqTOPjiykVxKrWnE10EQ7EjoaqBON6IT_4hGA0qm7Ht2HWHg4QE0fUHRHtJdpY13uSH0y5W_HmQwGvRt2tJJDjTnt_aHOpQIVldvX6nztwCinLet7i5eUfZbG4ZY7OYvccx14Y6oun90ONE7_ugPugNMXSYk1IXCG_fgKJo8ubmIXMGUtfsM4TkhPZFlgLUPwK7PiOm8Rr8piOSFLC6VhwRFSePTkr"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark py-12">
+<div class="max-w-5xl mx-auto px-10">
+<p class="text-center text-text-body dark:text-gray-400 font-semibold mb-6">TRUSTED BY PROFESSIONALS AT TOP COMPANIES</p>
+<div class="flex justify-center items-center gap-x-12 gap-y-4 flex-wrap">
+<img class="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all" data-alt="Google logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVdRSfe4-t0HU0HO58bA97QQVlsPyPZ0RZWjLvRQPOr8F5YA-lvGmx4S0VZo0TSlMhPYW-iOZfD5eXVZg4De1w1IRmowYm6ELGUXxZZMtxbnnj209eEKAGPex-eFNkpYUYSZlR_SGIW07eepe8JjKjnxKAilFQ_grqBtWy8Ks_gyV8l-VxUMvAeoU5-g3lif0HKyYaOxI9H5cA-D3urPgreNDCrDb3S6nmdlsfkR8sEaVPq0d2VtcKqdY4qxoVNdFr2tqhA23cGcq4"/>
+<img class="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all" data-alt="Microsoft logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNZUQuh-nh9yuFA-kO8rrSwvR1Y1rKe8zPe69mxjUv8xrkxXN24cBz3UgP0JgeAlaBEvdIj8fTbCMc34bce4UGHjdbblXxLrahoPakIeXa2qJBfPURLfX-Lx1JrErpCo3Aw0UL8lO8GbbA80SBDMYMCQRmoY5lgnpQUNmLdVBJLvJwpwFLjuArOpG_PHT8JfGUNQ0FTap8S3lF8UgIEshNooxNYnh1SbvE59q8Ma8ux6xTY4icAjrErkOiislFCnxDf7f3ooVGKNmB"/>
+<img class="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all" data-alt="Amazon logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6k6Vtqpdl0Lpsp2TLIip_j5aCy9m9t4PGtpi2vS9EBDCsx2uMmyLWijJpyS6LqdzQrVCiMcy2jFif2qiDpMyq7DpozT8SqzQ-noyz7nxYZbQqw7yifAd-4E8kgxuRGpp-HWGYzbQEQ96sMVNMLar4SiHZxR6SFsaI2i91BdwxX18g12NSYvErFfAy1fpjhCYfC8rYXmcUN8BzeUfPU-iTLnhz3GGl3ESCOolaCh21352-iZxMCmQjUjawBwKlnpsimTsm0FvX9mf3"/>
+<img class="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all" data-alt="Spotify logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH0ucoaHGEBFXZcncEtCwn3Qt7hTVrwqv3cACLv8BKqwnMZPDatmS1Fg06ATjAoi-lW4G3ADrY7KnNBg_Un6LYWy1FcSXrLG1qy64_Le1Uo4FZOkfBpqsks3l01cvZ0ruCTyFjYa1OaA9E04A77bpAJy3jsSmjec3f2CZoNTBShVQHsQQUUc718GV_qrUd-Xk6CPRH2xK_8oHcoNLzPRjzmDiJvshCq_yaNLu93b-jWezYRv6cbzqphrR5byyInA2FYl9eqWSTla6R"/>
+<img class="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all" data-alt="Salesforce logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAgLwCM0z4Q3hcyugGBHZGlSHMV80xHtEX1PFlpRp27LuZwgzQoq2AJzcyKBRQfegIecqfeEVw-87vLlw2yuVmwUGe8GIyF38LRpX09p_hxLrMN7JxTgk4wqiWF24ymRa_QQ1BUFaxu_2KxNzqk47cInt2BTexU38ikxroK5teGNMBrhqhHWeEl90koPch5NlPgqfphJ9PwBPvEXDpmQGJaHHDTa9mYAUUDtS6iIlsOCV7Iapcs2neMx-yEsLeb7aJ-Tw6fGgGvNOY"/>
+<img class="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all" data-alt="Slack logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDZfK2zi_Cxv-2Ty7wO1-iTCeY5wLbueI3fBljU7NU61PaRoHCi7Z0ch4SZrvVj7iuxyKATsLJhw1yHNOumCC4hdEugrkRSlfnoaE5DWjWH86rO_FTBS5ksF55i0iaroEQJxExDI4rEVIB7-UW3rmqVGHkBj3nFX19jAy7z_yrIWjHeVizDdkUcCHmDqDPac_xTjKQlw64TTO-F5i9bySfScbXrgPqEJk2_1QrlXaNTUvIX5_AtXeOQC7Ad7zLlwS5V01ykiZiwApQ"/>
+</div>
+</div>
+</div>
+<div class="py-20 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-text-headline dark:text-white text-[28px] font-bold leading-tight tracking-[-0.015em] px-10 pb-8 text-center">Real Results: Success Stories You Can Achieve</h2>
+<div class="relative">
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden pb-4">
+<div class="flex items-stretch p-4 gap-6 animate-carousel">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-md min-w-80">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="Professional headshot of a smiling man" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyh8YPK1spWn9GltXNssbmeJ1zruqJry6fgCrBeZGWWsjPilKBR7XYR3v_h9XSxR7f4ob4haKNvEj-Gw6AyPexkd1Y8b5xKcrQ4MGjfCGXhEmtWF23YDDWtXPBrXcG3gJUweT3PR8SY8Xg9nj4gC2-zD-tHPCg3T9Q_7GLw6OSobXL9v30qTnUi6Z8v3DynL3Z7r8twiuaeXAEfww3WHhR11z-oj1QH9EOgdJBSVC-M6EF5qFeYmnIxLeN8cTC7gr2i26kkUhtmTJg");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
 <div>
-  <a href="#main">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <a href="#Skill">Skill</a>
-  <a href="#Education">Education</a>
-
+<p class="text-text-headline dark:text-white text-base font-medium leading-normal">"My mentor helped me land my dream job at Google."</p>
+<p class="text-text-body dark:text-gray-400 text-sm font-normal leading-normal mt-1">- Sarah L., Software Engineer</p>
+<p class="text-text-body dark:text-gray-400 text-sm font-normal leading-normal mt-2">Mentor: John Doe, Senior Engineer @ Google</p>
 </div>
-<div id="main">
-    <h1>Welcome to Sakthivel Profile</h1>
-<p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
-<p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
-<p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
-<p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-background-light dark:bg-gray-800 text-text-body dark:text-gray-300 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="truncate">View Story</span>
+</button>
 </div>
-
-<div id="about">
-    <h2>About Me</h2>
-    <p>I am Sakthivel, a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating beautiful and functional websites.</p>
-    <p>
-        Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-    </p>
-    <p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
-<p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
-<p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
 </div>
-<div id="contact">
-    <h2>Contact Information</h2>
-    <p>Email:</p>
-    <p>Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.</p>
-<p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
-    </div>
-
-    <div>
-    <h2 id="Skill">Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        </ul>
-        <p style="background-color: green;">
-            Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-        </p>
-        <p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
-    </div>
-    <div id="Education">
-    <h2>Education</h2>
-    <p>Bachelor's Degree in Computer Science from XYZ University</p>   
-    <p style="background-color: yellow;">
-        Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-    </p> 
-    <p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p><p>
-    Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
-
-When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-</p>
-    </div>
-
-</body>
-
-</html>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-md min-w-80">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="Professional headshot of a person looking thoughtful" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABmeE618xGcLXjc3TyKpO7CKQkJg0jZVaBLOhcQZzhqFpboDDdlHo-CRBSOsvbNRvjOdIG5SSIoWW-_j9Zy1JPzDEZrw6W0WF_PepZOl2RrC_3VqXe-fYd5VIuk5gQwKM38Jnt2yyEGQn__Ex_WfIgF5hKlSbxZ84qFJb2sr8sVEP7UH-MpbHjKCp4lBywKCKnsJuKjitVlVkC87dCtm9FHDM5ufm0aPIHLFNZQu4fx8f4MBFiPfmncju9R3Rm3ewa4HB4Onbyx0PT");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-text-headline dark:text-white text-base font-medium leading-normal">"The guidance I received was invaluable for my startup's seed round."</p>
+<p class="text-text-body dark:text-gray-400 text-sm font-normal leading-normal mt-1">- David Chen, Founder &amp; CEO</p>
+<p class="text-text-body dark:text-gray-400 text-sm font-normal leading-normal mt-2">Mentor: Jane Smith, Serial Entrepreneur</p>
+</div>
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-background-light dark:bg-gray-800 text-text-body dark:text-gray-300 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="truncate">View Story</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-md min-w-80">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="Professional headshot of a smiling woman" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArAJa63UtgjJnQOeZrKpaQpJI6cpGULvKxya_rR1SuJaHTWPBFZc44V5RFeONCEZeT_QoMuBhjx3296U1Mli4-m-BMM9zPZYhEiFzg_XMPV4Sy8vLbQUC6B12j56EtAzsDcFfSngX1pHQsKEC8gZgz4M2EUZeCpnNHcGZnFXuaNtPDUPKBCUJxScJibWOXpq2bQBC2LRx9GHkJavppzWiRDYlEBvYYThbdp_xlQue12RYCaX6nAlkXM9vZNyHTtkKWF3Xh4_sDDmvm");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-text-headline dark:text-white text-base font-medium leading-normal">"I learned more in 6 months than in my entire college career."</p>
+<p class="text-text-body dark:text-gray-400 text-sm font-normal leading-normal mt-1">- Emily R., Product Manager</p>
+<p class="text-text-body dark:text-gray-400 text-sm font-normal leading-normal mt-2">Mentor: Michael B., VP of Product @ Spotify</p>
+</div>
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-background-light dark:bg-gray-800 text-text-body dark:text-gray-300 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="truncate">View Story</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-md min-w-80">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="Professional headshot of a person in a creative setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIiRCrOgZwojRIpcRQG4JUSOwhMuCmWSU08cPghTXMX8TYRtYNvQEkiDgZYATp3zbJrLQb0v6N_C_WsYH20fEXX58giOrmtp3fZ5tDwj9iSORAvMAxgnyTzpVtKMkERkKYwOnuz6upnB-8tLntGiEL0jAihtVe5-sS6REPiczIOHnPmq8wxyB5YZpJmRVfxS7Lxm2JqQJAMwK_HfRDTUtTgQEGvRiEs4FW5OFtoqL5A4uOIOJ0AA6nl4Mraq7R2e2w9w7yqZSK5Qrt");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-text-headline dark:text-white text-base font-medium leading-normal">"Transitioning to a new industry was seamless with my mentor's support."</p>
+<p class="text-text-body dark:text-gray-400 text-sm font-normal leading-normal mt-1">- Alex Martinez, UX Designer</p>
+<p class="text-text-body dark:text-gray-400 text-sm font-normal leading-normal mt-2">Mentor: Chloe Davis, Head of Design @ Airbnb</p>
+</div>
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-background-light dark:bg-gray-800 text-text-body dark:text-gray-300 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="truncate">View Story</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-5xl mx-auto px-10">
+<h2 class="text-text-headline dark:text-white text-center text-[28px] font-bold leading-tight tracking-[-0.015em] mb-10">Explore Our Featured Expertise</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-full mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">code</span>
+</div>
+<h3 class="text-xl font-bold text-text-headline dark:text-white">Software Development</h3>
+<p class="text-text-body dark:text-gray-400 mt-2 mb-4">Code, build, and scale with guidance from top engineers.</p>
+<a class="font-bold text-primary hover:underline" href="#">Find a Mentor</a>
+</div>
+<div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-full mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">inventory_2</span>
+</div>
+<h3 class="text-xl font-bold text-text-headline dark:text-white">Product Management</h3>
+<p class="text-text-body dark:text-gray-400 mt-2 mb-4">Shape product vision and strategy with seasoned PMs.</p>
+<a class="font-bold text-primary hover:underline" href="#">Find a Mentor</a>
+</div>
+<div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-full mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">campaign</span>
+</div>
+<h3 class="text-xl font-bold text-text-headline dark:text-white">Marketing &amp; Growth</h3>
+<p class="text-text-body dark:text-gray-400 mt-2 mb-4">Master acquisition, branding, and analytics from experts.</p>
+<a class="font-bold text-primary hover:underline" href="#">Find a Mentor</a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark py-20">
+<div class="text-center max-w-2xl mx-auto px-10">
+<h2 class="text-text-headline dark:text-white text-3xl font-bold">Ready to Accelerate Your Career?</h2>
+<p class="text-text-body dark:text-gray-300 mt-4 text-lg">Join a community of ambitious professionals and get matched with a mentor who can help you achieve your goals. It's free to get started.</p>
+<button class="mt-8 flex min-w-[200px] max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-lg font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Join Devbrains Free</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+<style>
+    @keyframes carousel {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-carousel {
+      animation: carousel 30s linear infinite;
+      width: 200%; /* Double the width to create a seamless loop */
+    }
+    .dark .invert-if-dark {
+      filter: invert(1) brightness(2);
+    }
+  </style>
+</body></html>
